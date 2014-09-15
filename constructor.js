@@ -26,3 +26,31 @@ Person.prototype.wakeUp = function () {
 		console.log(this.name + " is already awake");
 	}
 };
+
+var Student = function () {
+// uh
+};
+
+Student.prototype.study = function () {
+	if (this.study === false) {
+		this.study = true;
+	} else {
+		console.log(this.name + " is already studying");
+	}
+};
+
+Student.prototype.stopStudy = function () {
+	if (this.study === true) {
+		this.study = false;
+	} else {
+		console.log(this.name + " is already stopped");
+	}
+};
+
+Student.prototype.sleep = function () {
+	if (this.studying === false) {
+		this.sleep = true
+	} else {
+		console.log(this.name + " is studying and cannot sleep")
+	}
+};
