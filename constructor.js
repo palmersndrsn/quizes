@@ -27,8 +27,9 @@ Person.prototype.wakeUp = function () {
 	}
 };
 
-var Student = function () {
-// uh
+var Student = function (studying) {
+	this.studying = false;
+	// not sure how to inherit from Person,
 };
 
 Student.prototype.study = function () {
@@ -49,8 +50,8 @@ Student.prototype.stopStudy = function () {
 
 Student.prototype.sleep = function () {
 	if (this.studying === false) {
-		this.sleep = true
+		this.sleep = true;
 	} else {
-		console.log(this.name + " is studying and cannot sleep")
+		console.log(this.name + " is studying and cannot sleep");
 	}
 };
